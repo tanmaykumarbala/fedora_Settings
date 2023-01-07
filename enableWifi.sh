@@ -1,0 +1,7 @@
+$(rm -rf /home/tanmaybala/Downloads/rtl8852be)
+$(cd /home/tanmaybala/Downloads)
+$(git clone https://github.com/HRex39/rtl8852be.git -b dev)
+$(cd /home/tanmaybala/Downloads/rtl8852be)
+$(make -j8)
+$(sudo make install)
+$(sudo modprobe 8852be)
